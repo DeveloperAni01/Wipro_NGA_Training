@@ -1,0 +1,22 @@
+﻿@model IEnumerable<WebApplication3.Models.Student>
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <div style="width:80%">
+    <table class="table">
+        <tr>
+            <th>Roll_No</th>
+            <th>Name</th>
+            <th>Class_Name</th>
+        </tr>
+
+        @foreach (var student in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(e => student.RollNo)</td>
+                <td>@Html.DisplayFor(e => student.Name)</td>
+                <td>@Html.DisplayFor(e => student.ClassName)</td>
+            </tr>
+        }
+    </table>
+  </div>

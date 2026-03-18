@@ -1,0 +1,24 @@
+﻿@model RegisterViewModel
+
+<h2>Register User</h2>
+
+<form method="post" action="/Account/RegisterUser">
+
+    <div>
+        <label>Name</label>
+        <input required type="text" name="Name" asp-for="Name" />
+    </div>
+    <br />
+    <div>
+        <label>Email</label>
+        <input required type="email" name="Email" asp-for="Email" />
+    </div>
+    <br />
+    <div>
+        <label>Password</label>
+        <input required type="password" name="Password" asp-for="Password" />
+    </div>
+    <br />
+    <button type="submit">Register</button>
+
+</form>

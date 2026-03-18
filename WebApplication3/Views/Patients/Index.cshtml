@@ -1,0 +1,19 @@
+﻿@model IEnumerable<WebApplication3.Models.Patient>
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+<table class="table">
+    <tr>
+        <th>Patient_ID</th>
+        <th></th>
+        <th>Patient_Name</th>
+    </tr>
+    @foreach (var patient in Model)
+    {
+        <tr>
+            <td>@Html.DisplayFor(e => patient.PatientId)</td>
+            <td></td>
+            <td>@Html.DisplayFor(e => patient.name)</td>
+        </tr>
+    }
+</table>
