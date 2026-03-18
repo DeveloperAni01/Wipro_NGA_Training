@@ -1,0 +1,28 @@
+There are basically two types of classes ====>
+		1.statc class
+		2.instance class
+
+1.static class => using static keyword ; directly access the methods without even create an object of it; e.g Console class
+2.instance class => not access the methods without create an object of that class.
+
+null cohesion operator ==> if value not null take it if null do something; e.g int? x = null;//nullable type   int y = x ?? 0
+
+
+//int? x = null ;
+//int y = x ?? 0;
+//Console.WriteLine(y);
+
+//int availabletickets;
+//int? totaltickets = 500;
+
+//availabletickets = totaltickets ?? 0;
+
+//Console.WriteLine(availabletickets);
+
+string s = @"c://training";
+string first_name = "Anirban";
+string last_name = "Mondal";
+           
+
+//Console.WriteLine("{0} {1}",first_name,last_name);//string concatenation using placeholders
+Console.WriteLine($"{first_name} {last_name}");

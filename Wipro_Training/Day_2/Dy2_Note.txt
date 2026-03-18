@@ -1,0 +1,25 @@
+**** Exception Handling:==>
+	if unexpected error occurred then using try catch block to handling the error without breaking the application
+
+		Console.WriteLine("enter yout age: ");
+try {
+    byte age = byte.Parse(Console.ReadLine()); //exception occurred if user give a string as an input here like "ten","eleven"
+
+    if (age <= 0) { Console.WriteLine("enter valid age!!"); }
+
+    else if (age > 18)
+    {
+        Console.WriteLine("adult");
+    }
+    else
+    {
+        Console.WriteLine("not adult");
+    }
+}
+catch
+{
+    Console.WriteLine("try after some time");
+}
+
+
+***types of parameters == > value type, reference type, output type, param array type           
